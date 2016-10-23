@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 4dc5d638d8a20486ebd5f75f2eaea6c61bdfa3fc Sacusa <sudhanshugupta96@gmail.com> 1474655800 +0530	commit (initial): :neckbeard: Added .gitattributes & .gitignore files
+4dc5d638d8a20486ebd5f75f2eaea6c61bdfa3fc 95dbabacddfd2851e50b7f8661dc51493bccaf26 Sacusa <sudhanshugupta96@gmail.com> 1474656427 +0530	commit: First upload
+95dbabacddfd2851e50b7f8661dc51493bccaf26 4271670b7050bbeac8cc1dd963f95ad4bc43f149 Sacusa <sudhanshugupta96@gmail.com> 1475431360 +0530	commit: Removed the default splash screen; added custom splash screen for NU
+4271670b7050bbeac8cc1dd963f95ad4bc43f149 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475434805 +0530	commit: Added custom splash.png; added custom moodle.png
+889110c721fe196b8a7e9f35894ad4129733e4f6 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475434993 +0530	checkout: moving from master to nu-moodle
+889110c721fe196b8a7e9f35894ad4129733e4f6 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475435004 +0530	checkout: moving from nu-moodle to master
+889110c721fe196b8a7e9f35894ad4129733e4f6 1473d3dc9f764f9fd594a3d80908327592b03879 Sacusa <sudhanshugupta96@gmail.com> 1475435082 +0530	revert: Revert "Added custom splash.png; added custom moodle.png"
+1473d3dc9f764f9fd594a3d80908327592b03879 ae0a81656ec9276bb75232a8728590835076c3ec Sacusa <sudhanshugupta96@gmail.com> 1475435100 +0530	revert: Revert "Revert "Added custom splash.png; added custom moodle.png""
+ae0a81656ec9276bb75232a8728590835076c3ec 1473d3dc9f764f9fd594a3d80908327592b03879 Sacusa <sudhanshugupta96@gmail.com> 1475435118 +0530	reset: moving to ae0a81656ec9276bb75232a8728590835076c3ec^
+1473d3dc9f764f9fd594a3d80908327592b03879 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475435122 +0530	reset: moving to 1473d3dc9f764f9fd594a3d80908327592b03879^
+889110c721fe196b8a7e9f35894ad4129733e4f6 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475435138 +0530	checkout: moving from master to nu-moodle
+889110c721fe196b8a7e9f35894ad4129733e4f6 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475435349 +0530	checkout: moving from nu-moodle to master
+889110c721fe196b8a7e9f35894ad4129733e4f6 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475435360 +0530	checkout: moving from master to nu-moodle
+889110c721fe196b8a7e9f35894ad4129733e4f6 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475435364 +0530	checkout: moving from nu-moodle to master
+889110c721fe196b8a7e9f35894ad4129733e4f6 938e42b3c840c7da28a22b01a0387f09b6aaad76 Sacusa <sudhanshugupta96@gmail.com> 1475782081 +0530	commit: Modified the custom splash screen; added custom theme for NU
+938e42b3c840c7da28a22b01a0387f09b6aaad76 889110c721fe196b8a7e9f35894ad4129733e4f6 Sacusa <sudhanshugupta96@gmail.com> 1475782499 +0530	reset: moving to 938e42b3c840c7da28a22b01a0387f09b6aaad76^
+889110c721fe196b8a7e9f35894ad4129733e4f6 bcc5ecfb180dce1ab64f71ebac1b5262dc31dea7 Sacusa <sudhanshugupta96@gmail.com> 1475782521 +0530	commit: Modified the custom splash screen; added custom theme for NU
+bcc5ecfb180dce1ab64f71ebac1b5262dc31dea7 6270f39ea4dc3062c9d7d1ce0f5333f66f929b32 Sacusa <sudhanshugupta96@gmail.com> 1475928690 +0530	commit: Modified config.xml, config.json; corrected splash screen; added new icon; modified theme;
+6270f39ea4dc3062c9d7d1ce0f5333f66f929b32 e6ad64bd643d0addc5e85c0e3672fa0254844217 Sacusa <sudhanshugupta96@gmail.com> 1475929933 +0530	commit: Forgot to add required build files
