@@ -669,6 +669,7 @@
     "mma.mod_quiz.timeleft": "الوقت المتبقي",
     "mma.mod_quiz.timetaken": "الوقت المستغرق",
     "mma.mod_quiz.yourfinalgradeis": "درجتك النهائية عن هذا الاختبار هي {{$a}}",
+    "mma.mod_resource.openthefile": "افتح الملف",
     "mma.mod_scorm.asset": "قييم",
     "mma.mod_scorm.attempts": "محاولات",
     "mma.mod_scorm.averageattempt": "متوسط المحاولات",
@@ -713,6 +714,5 @@
     "mma.mod_wiki.nocontent": "لا يوجد محتوى في هذه الصفحة",
     "mma.mod_wiki.notingroup": "لا ينتمي إلى مجموعة",
     "mma.mod_wiki.pagename": "اسم الصفحة",
-    "mma.mod_wiki.wrongversionlock": "قام مستخدم آخر بتحديث هذه الصفحة بينما كنت أنت تحررها، أصبحت تعديلاتك قديمة.",
-    "mma.mod_resource.openthefile": "افتح الملف"
+    "mma.mod_wiki.wrongversionlock": "قام مستخدم آخر بتحديث هذه الصفحة بينما كنت أنت تحررها، أصبحت تعديلاتك قديمة."
 }

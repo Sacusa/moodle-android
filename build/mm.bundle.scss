@@ -735,6 +735,16 @@ mm-format-text {
 .item.item-button-right .badge.mm-course-download{
   right: $spinner-width + $item-padding;
 }
+input.mm-fileuploader-picker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  outline: none;
+}
+
 
 $mm-question-correct-color:         #468847 !default;
 $mm-question-incorrect-color:       #b94a48 !default;
@@ -854,16 +864,6 @@ li.mm-question-answer-incorrect,
   color: $mm-question-warning-color;
 }
 
-input.mm-fileuploader-picker {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  outline: none;
-}
-
 #mm-settings-languagelabel {
   color: $base-color;
 }
@@ -895,6 +895,92 @@ $bar-side-menu-text-color: $bar-content-text !default;
   top: $bar-side-menu-height;
 }
 
+
+$mma-messages-date-badge: "stable" !default;
+
+// The date displayed in the list.
+.mma-messages-date {
+
+  text-align: center;
+  margin-top: 10px;
+
+  span {
+    @extend .badge;
+    @extend .badge-#{$mma-messages-date-badge};
+  }
+}
+
+.mma-messages-input-inset {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.mma-messages-footer-note {
+    color: $button-light-text;
+    font-size: $font-size-base;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.button.mma-messages-clear-search {
+  top: 0px;
+}
+
+.mma-messages-discussion-container {
+  padding-bottom: 15px;
+}
+
+.button.button-icon.mma-messages-delete-button {
+  min-height: initial;
+  line-height: initial;
+  &:before {
+    font-size: 100%;
+    line-height: initial;
+  }
+}
+
+.mma-messages-send-message-bar {
+  width: 100%;
+}
+.mm-site_messages-discussion {
+  .list-left-editing .item-message.item-left-editable,
+  .item-left-editing.item-message.item-left-editable {
+    max-width: calc(80% + 35px);
+    -moz-transition: max-width ease-in-out 125ms;
+    -o-transition: max-width ease-in-out 125ms;
+    -webkit-transition: max-width ease-in-out 125ms;
+    transition: max-width ease-in-out 125ms;
+  }
+
+  .list-left-editing .item-left-editable .item-content,
+  .item-left-editing.item-left-editable .item-content {
+    -webkit-transform: none;
+    transform: none;
+    padding-left: 35px;
+    -moz-transition: padding-left ease-in-out 125ms;
+    -o-transition: padding-left ease-in-out 125ms;
+    -webkit-transition: padding-right ease-in-out 125ms;
+    transition: padding-left ease-in-out 125ms;
+    background-color: transparent;
+  }
+
+  .list-left-editing .item-left-editable.item-message-mine .item-content,
+  .item-left-editing.item-left-editable.item-message-mine .item-content {
+    padding-left: 0;
+    padding-right: 35px;
+    -moz-transition: padding-right ease-in-out 125ms;
+    -o-transition: padding-right ease-in-out 125ms;
+    -webkit-transition: right-right ease-in-out 125ms;
+    transition: padding-right ease-in-out 125ms;
+  }
+
+  .item-message-mine .item-left-edit.visible.active {
+    right: 0;
+    left: initial;
+  }
+}
 
 /* - User grades table (most of it extracted from MM1)
 -------------------------------------------------------------------------- */
@@ -988,92 +1074,6 @@ $bar-side-menu-text-color: $bar-content-text !default;
   }
   .leveleven {
     background-color: #fff;
-  }
-}
-
-$mma-messages-date-badge: "stable" !default;
-
-// The date displayed in the list.
-.mma-messages-date {
-
-  text-align: center;
-  margin-top: 10px;
-
-  span {
-    @extend .badge;
-    @extend .badge-#{$mma-messages-date-badge};
-  }
-}
-
-.mma-messages-input-inset {
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-}
-
-.mma-messages-footer-note {
-    color: $button-light-text;
-    font-size: $font-size-base;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-}
-
-.button.mma-messages-clear-search {
-  top: 0px;
-}
-
-.mma-messages-discussion-container {
-  padding-bottom: 15px;
-}
-
-.button.button-icon.mma-messages-delete-button {
-  min-height: initial;
-  line-height: initial;
-  &:before {
-    font-size: 100%;
-    line-height: initial;
-  }
-}
-
-.mma-messages-send-message-bar {
-  width: 100%;
-}
-.mm-site_messages-discussion {
-  .list-left-editing .item-message.item-left-editable,
-  .item-left-editing.item-message.item-left-editable {
-    max-width: calc(80% + 35px);
-    -moz-transition: max-width ease-in-out 125ms;
-    -o-transition: max-width ease-in-out 125ms;
-    -webkit-transition: max-width ease-in-out 125ms;
-    transition: max-width ease-in-out 125ms;
-  }
-
-  .list-left-editing .item-left-editable .item-content,
-  .item-left-editing.item-left-editable .item-content {
-    -webkit-transform: none;
-    transform: none;
-    padding-left: 35px;
-    -moz-transition: padding-left ease-in-out 125ms;
-    -o-transition: padding-left ease-in-out 125ms;
-    -webkit-transition: padding-right ease-in-out 125ms;
-    transition: padding-left ease-in-out 125ms;
-    background-color: transparent;
-  }
-
-  .list-left-editing .item-left-editable.item-message-mine .item-content,
-  .item-left-editing.item-left-editable.item-message-mine .item-content {
-    padding-left: 0;
-    padding-right: 35px;
-    -moz-transition: padding-right ease-in-out 125ms;
-    -o-transition: padding-right ease-in-out 125ms;
-    -webkit-transition: right-right ease-in-out 125ms;
-    transition: padding-right ease-in-out 125ms;
-  }
-
-  .item-message-mine .item-left-edit.visible.active {
-    right: 0;
-    left: initial;
   }
 }
 
@@ -1425,55 +1425,6 @@ $mma-chat-notice-badge: "stable" !default;
 }
 
 
-$mma-mod-scorm-level-margin:		25px !default;
-$mma-mod-scorm-warning-color:		#c00 !default;
-
-@for $i from 0 through 15 {
-  .mma-scorm-level-#{$i} {
-    padding-left: $item-padding + 15px * $i
-  }
-}
-
-.mma-mod-scorm-checkbox-padding {
-  padding: 5px 10px;
-}
-
-.mma-mod-scorm-warning {
-  color: $mma-mod-scorm-warning-color;
-}
-
-ion-popover-view {
-  /* Adapt popover to content's height. The popover's ion-content needs to disable Ionic scroll. */
-  &.mma-scorm-popover {
-    height: auto;
-    max-height: 80%;
-    overflow: scroll;
-
-    ion-content {
-      position: relative;
-    }
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    p.padding {
-      margin: 0px; /* Don't add margins to p with padding inside the TOC. */
-    }
-  }
-
-  /* Decrease items padding in popover. */
-  .mma-scorm-popover-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-/* Fix popover styles in iOS. */
-.platform-ios ion-popover-view.mma-scorm-popover {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-
 $mma-mod-quiz-warning-color:      #c00 !default;
 $mma-mod-quiz-highlight-color:    #d9edf7 !default;
 $mma-mod-quiz-alternate-color:    #fbfbfb !default;
@@ -1545,6 +1496,55 @@ p.mma-mod-quiz-warning {
   &:not(.mma-mod-quiz-last-of-page) {
     border-bottom: 0;
   }
+}
+
+
+$mma-mod-scorm-level-margin:		25px !default;
+$mma-mod-scorm-warning-color:		#c00 !default;
+
+@for $i from 0 through 15 {
+  .mma-scorm-level-#{$i} {
+    padding-left: $item-padding + 15px * $i
+  }
+}
+
+.mma-mod-scorm-checkbox-padding {
+  padding: 5px 10px;
+}
+
+.mma-mod-scorm-warning {
+  color: $mma-mod-scorm-warning-color;
+}
+
+ion-popover-view {
+  /* Adapt popover to content's height. The popover's ion-content needs to disable Ionic scroll. */
+  &.mma-scorm-popover {
+    height: auto;
+    max-height: 80%;
+    overflow: scroll;
+
+    ion-content {
+      position: relative;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    p.padding {
+      margin: 0px; /* Don't add margins to p with padding inside the TOC. */
+    }
+  }
+
+  /* Decrease items padding in popover. */
+  .mma-scorm-popover-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Fix popover styles in iOS. */
+.platform-ios ion-popover-view.mma-scorm-popover {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .mma-mod_survey-darkbg {
