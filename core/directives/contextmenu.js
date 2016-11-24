@@ -23,14 +23,12 @@ angular.module('mm.core')
      * @param {Object} item Scope of the item to add.
      */
     this.addContextMenuItem = function(item) {
-        if (!item.$$destroyed) {
-            items.push(item);
+        items.push(item);
 
-            item.$on('$destroy', function() {
-                var index = items.indexOf(item);
-                items.splice(index, 1);
-            });
-        }
+        item.$on('$destroy', function() {
+            var index = items.indexOf(item);
+            items.splice(index, 1);
+        });
     };
 
     /**
@@ -243,13 +241,11 @@ angular.module('mm.core')
                 // Item should be merged with an outer context-menu in tablet view.
                 // Wait a bit to be sure the active header bar is ready.
                 $timeout(function() {
-                    if (!scope.$$destroyed) {
-                        var ctrl = getOuterContextMenuController();
-                        if (ctrl) {
-                            CtxtMenuCtrl = ctrl;
-                        }
-                        CtxtMenuCtrl.addContextMenuItem(scope);
+                    var ctrl = getOuterContextMenuController();
+                    if (ctrl) {
+                        CtxtMenuCtrl = ctrl;
                     }
+                    CtxtMenuCtrl.addContextMenuItem(scope);
                 }, 1000);
             } else {
                 CtxtMenuCtrl.addContextMenuItem(scope);
